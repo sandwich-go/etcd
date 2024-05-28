@@ -55,6 +55,8 @@ Member:
     Path to the dedicated wal directory.
   --snapshot-count '100000'
     Number of committed transactions to trigger a snapshot to disk.
+  --snapshot-catch-up-entries '5000'
+    number of entries for a slow follower to catch-up after compacting the raft storage entries.
   --heartbeat-interval '100'
     Time (in milliseconds) of a heartbeat interval.
   --election-timeout '1000'
